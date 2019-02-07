@@ -1,0 +1,673 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Golden State Epoxy Flooring</title>
+        <meta name="description" content="Epoxy Flooring in the Bay Area, California">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0="crossorigin="anonymous">
+
+        <style>
+            @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+            @media (max-width: 992px) {
+                #gse-sidebar {
+                    display: none;
+                }
+            }
+
+            html, body {
+                position: relative;
+                z-index: -1000;
+                margin: 0;
+                font-family: Lato, sans-serif;
+                text-align: center;
+                color: #777;
+                background-color: #FCFCFC;
+            }
+
+            /* ==========
+               OVERRIDES
+            ========== */
+
+            .row {
+                padding: 50px 40px 0 40px;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: 700;
+            }
+
+            .img-thumbnail {
+                height: 100%;
+                width: 100%;
+            }
+
+            /* ==========
+               BANNER
+            ========== */
+
+            .gse-banner {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+
+                z-index: 3;
+                margin: 0;
+                padding: 0;
+                background-color: #132624;
+                color: #FCFCFC;
+                text-align: center;
+
+                background: url(https://images.unsplash.com/photo-1544457070-4cd773b4d71e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9) no-repeat top center fixed;
+                background-size: cover;
+                background-position: bottom;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+            }
+
+            .gse-banner
+            .gse-banner-header h1 {
+                font-weight: 700;
+            }
+
+            .gse-banner
+            .gse-banner-header small {
+                color: #FCFCFC;
+            }
+
+            .gse-banner
+            .gse-banner-btns {
+                overflow: hidden;
+                height: 73px;
+            }
+
+            .gse-banner-scrollhint {
+                display: hide;
+            }
+
+            .gse-banner-scrollhint span {
+                color: #FCFCFC;
+                font-size: 50px;
+                -webkit-animation-delay: 0.9s;
+                -moz-animation-delay: 0.9s;
+            }
+
+            /* ==========
+               NAVBAR
+            ========== */
+
+            .gse-navbar {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                -webkit-animation-delay: 0.5s;
+                -moz-animation-delay: 0.5s;
+            }
+
+            .gse-navbar-fixed {
+                position: fixed;
+                top: 0;
+                left: 40px;
+                right: 40px;
+                height: 70px;
+                overflow: hidden;
+            }
+
+            .gse-navbar
+            .gse-navbar-spacer {
+                flex-grow: 0;
+            }
+
+            .gse-navbar
+            .gse-navbar-logo {
+                display: none;
+                flex-grow: 0;
+                font-weight: 500;
+                font-size: 1.8em;
+            }
+
+            .gse-navbar
+            .gse-navbar-logo a {
+                cursor: default;
+                font-size: 1em;
+                font-weight: bold;
+                padding: 5px;
+            }
+
+            .gse-navbar-bg {
+                display: none;
+                z-index: -1;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 68px;
+                background-color: #132624;
+                background: url(http://i.imgur.com/YrpOICM.jpg) no-repeat center center fixed;
+                border-bottom: 2px solid #FCFCFC;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+
+            /* ==========
+               SIDEBAR
+            ========== */
+
+            /* sidebar */
+            .gse-sidebar {
+                height: 100%;
+                padding-left: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            /* all links */
+            .gse-sidebar .nav>li>a {
+                color: #999;
+                padding: 4px 20px;
+                font-size: 13px;
+                font-weight: 400;
+            }
+
+            .gse-sidebar .nav>.active>a {
+                color: #563d7c;
+            }
+
+            .affix {
+                top: 100px;
+                right: 30px;
+            }
+
+            /* ==========
+               CONTENT
+            ========== */
+
+            .gse-content {
+                margin-top: 50px;
+                position: relative;
+                text-align: justify;
+                z-index: -99;
+                /*font-size: 1.3em;*/
+            }
+
+            .gse-content-details {
+                margin-top: 10px;
+            }
+
+            /* ==========
+               UTILITY
+            ========== */
+
+            a.gse-btn,
+            a.gse-btn:visited,
+            a.gse-btn:focus {
+                margin-top: 10px;
+                border-radius: 0;
+                border: 2px solid #FCFCFC;
+                background-color: unset;
+                color: #FCFCFC;
+            }
+
+            a.gse-btn:hover,
+            a.gse-btn:link,
+            a.gse-btn:active {
+                border: 2px solid #8bcdb7;
+                background-color: unset;
+                color: #8bcdb7;
+            }
+
+            a.gse-btn.gse-btn-color,
+            a.gse-btn:visited.gse-btn-color,
+            a.gse-btn:focus.gse-btn-color {
+                border-color: #096480;
+                color: #096480;
+            }
+
+            a.gse-btn:hover.gse-btn-color,
+            a.gse-btn:link.gse-btn-color,
+            a.gse-btn:active.gse-btn-color {
+                border-color: #8bcdb7;
+                color: #8bcdb7;
+            }
+
+            .gse-img-overlay {
+                float: left;
+                position: absolute;
+                padding: 0 15px 5px 15px;
+                margin-top: 50px;
+                margin-left: 10px;
+                text-align: left;
+                background-color: #333;
+                background-color: rgba(51, 51, 51, 0.6);
+                color: #FCFCFC;
+            }
+
+            .gse-img-overlay h2 {
+                font-size: 2.5em;
+            }
+
+            .gse-img-overlay img {
+                height: 100%;
+                width: 100%;
+            }
+
+            .gse-text-center {
+                text-align: center!important;
+            }
+
+            .gse-text-left {
+                text-align: left!important;
+            }
+
+            hr {
+                border-width: 2px;
+                width: 80%;
+                border-color: #FCFCFC;
+            }
+
+            p.small {
+                text-align: left;
+                font-size: 1.3em;
+                margin-top: 15px;
+            }
+
+            .img-responsive {
+                margin-top: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="gse-navbar-bg"></div>
+
+        <!-- banner -->
+        <div class="gse-banner jumbotron">
+            <div class="gse-banner-inner">
+
+                <!-- header -->
+                <div class="gse-banner-header container">
+                    <h1>Golden State Epoxy</h1>
+                    <p class="lead">Epoxy Flooring Solutions in San Francisco, CA</p>
+                </div>
+
+                <hr />
+
+                <!-- navbar -->
+                <div class="gse-banner-btns">
+                    <div class="gse-navbar animated fadeIn">
+
+                        <!-- logo -->
+                        <p class="gse-navbar-logo">
+                            <a class="gse-btn btn btn-default btn-lg">
+                                H<small>St.</small>C
+                            </a>
+                        </p>
+
+                        <p class="gse-navbar-spacer"></p>
+
+                        <!-- btns -->
+                        <h2 class="gse-navbar-btns">
+                            Call (415) 555-5555
+                        </h2>
+
+                    </div>  <!-- /btns -->
+                </div>  <!-- /navbar -->
+            </div>  <!-- /inner -->
+
+            <!-- scrollhint -->
+            <div class="gse-banner-scrollhint animated pulse infinite">
+                <a href="#" onclick="gse.scrollPastBanner()">
+                    <span class="glyphicon glyphicon-menu-down animated fadeIn"></span>
+                </a>
+            </div>
+        </div>  <!-- /banner -->
+
+
+        <!-- content -->
+        <div class="gse-content container-fluid">
+
+            <!-- description -->
+            <div class="row">
+
+                <blockquote class="gse-content-description">
+                    <p class="lead">
+                        Golden State Epoxy is the Bay Area's premiere flooring solutions provider. We have <em>your</em> floor "covered".
+                    </p>
+                </blockquote>
+            </div>
+
+            <!-- do stuff -->
+            <div class="row">
+
+                <!-- join -->
+                <div class="col-xs-12 col-sm-6">
+                    <h3 class="gse-text-center lead">RESIDENTIAL</h3>
+                    <p>
+                        From single-resident living rooms to active multi-tenant garages, epoxy adds a warm, modern touch to any residential property.
+                    </p>
+                    <p>
+                        Call for our special residential rate.
+                    </p>
+                </div>
+
+                <!-- found -->
+                <div class="col-xs-12 col-sm-6">
+                    <h3 class="gse-text-center lead">COMMERCIAL</h3>
+                    <p>
+                        From airport terminals and parking garages, to modern museum galleries and commercial food production facilities, Golden State Epoxy has a flooring solution for any budget.
+                    </p>
+                    <p>
+                        Call for our special commercial rate.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row col-xs-12">
+                <h1 class="gse-text-center">Call (415) 555-5555 today.</h1>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+        <script>
+        $(document).ready(function() {
+            "use strict";
+
+            window.gse = {
+                scrollPastBanner: scrollPastBanner
+            };
+
+            // position constants
+            var SHOULD_WRAP_MIN_WINDOW_WIDTH = 700;
+            var SHOULD_WRAP_MIN_WINDOW_HEIGHT = 700;
+            var CAN_EXPAND_MIN_GAP = 60;
+
+            // time constants
+            var WRAP_ANIMATION_MS = 200;
+            var EXPAND_ANIMATION_MS = 200;
+            var LOGO_FADE_ANIMATION_MS = 100;
+
+            var state = {};
+            var el = {
+                $window: $(window),
+                $body: $('body'),
+                $banner: $('.gse-banner'),
+                $bannerInner: $('.gse-banner-inner'),
+                $navbar: $('.gse-navbar'),
+                $navbarLogo: $('.gse-navbar-logo'),
+                $navbarButtons: $('.gse-navbar-btns'),
+                $navbarSpacer: $('.gse-navbar-spacer'),
+                $navbarBg: $('.gse-navbar-bg'),
+                $scrollHint: $('.gse-banner-scrollhint'),
+                $houses: $('.gse-houses'),
+                $sidebar: $('#gse-sidebar'),
+            };
+
+            /**
+             * Debounce to call on init, then at most every {delay} ms.
+             *
+             * @param {function} fn
+             * @param {Number} delay
+             * @return {function}
+             */
+            function debounce(fn, delay) {
+                var isDebounced = false;
+
+                return function() {
+                    var args = arguments;
+
+                    if (isDebounced) {
+                        return;
+                    }
+
+                    isDebounced = true;
+                    fn.apply(this, args);
+
+                    setTimeout(function() {
+                        fn.apply(this, args);
+                        isDebounced = false;
+                    }.bind(this), delay);
+                };
+            }
+
+            /**
+             * Accepts {currentState} to compare against the global state object.
+             * True if any value in currentState does not match corresponding
+             * value in global state.
+             *
+             * @param {Object} currentState
+             * @return Boolean
+             */
+            function isStateChanged(currentState) {
+                return Object.keys(currentState).some(function(key) {
+                    if (currentState[key] !== state[key]) {
+                        return true;
+                    }
+                });
+            }
+
+            /**
+             * "Wrap" navbar items and affix to top, or "unwrap" into banner layout.
+             *
+             * @return undefined
+             */
+            function wrapNav() {
+                if (state.wrapNavInFlight) {
+                    return;
+                }
+
+                var checkShouldWrap = function() {
+                    var bannerBounds = el.$banner[0].getBoundingClientRect();
+                    var navbarBounds = el.$navbar[0].getBoundingClientRect();
+
+                    // do not wrap on small screens (nav blocks viewport)
+                    if (el.$window.width() < SHOULD_WRAP_MIN_WINDOW_WIDTH) {
+                        return false;
+                    }
+                    if (el.$window.height() < SHOULD_WRAP_MIN_WINDOW_HEIGHT) {
+                        return false;
+                    }
+
+                    // position is fixed only in navbar layout
+                    var isWrapped = el.$navbar.css('position') === 'fixed';
+                    var navOutsideBanner = navbarBounds.bottom >= bannerBounds.bottom;
+                    var scrolledToNavbar = navbarBounds.top <= 0;
+
+                    // if wrapped and not fully contained in banner
+                    if (isWrapped && navOutsideBanner) {
+                        return true;
+                    }
+
+                    // if not wrapped and scrolled to/past navbar
+                    if (!isWrapped && scrolledToNavbar) {
+                        return true;
+                    }
+
+                    return false;
+                };
+
+                var shouldWrap = checkShouldWrap();
+                if (!isStateChanged({isWrapped: shouldWrap})) {
+                    return;
+                }
+
+                state.wrapNavInFlight = true;
+                state.isWrapped = !state.isWrapped;
+
+                var onAfterWrap = function() {
+                    el.$navbarLogo.fadeIn(LOGO_FADE_ANIMATION_MS);
+                    state.wrapNavInFlight = false;
+                };
+
+                var onBeforeUnwrap = function(cb) {
+                    el.$navbarLogo.fadeOut(LOGO_FADE_ANIMATION_MS, cb);
+                };
+
+                var onAfterUnwrap = function() {
+                    el.$navbarBg.hide();
+                    state.wrapNavInFlight = false;
+                };
+
+                var wrap = function(cb) {
+                    el.$navbarBg.show();
+                    el.$navbar.addClass('gse-navbar-fixed');
+                    el.$navbarSpacer.animate(
+                        {'flex-grow': 9},
+                        WRAP_ANIMATION_MS,
+                        cb
+                    );
+                };
+
+                var unwrap = function() {
+                    el.$navbar.removeClass('gse-navbar-fixed');
+                    el.$navbarSpacer.animate(
+                        {'flex-grow': 0},
+                        WRAP_ANIMATION_MS,
+                        onAfterUnwrap
+                    );
+                };
+
+                if (shouldWrap) {
+                    wrap(onAfterWrap);
+                } else {
+                    onBeforeUnwrap(unwrap);
+                }
+            }
+
+            function scrollPastBanner() {
+                var naturalHeight = el.$bannerInner.outerHeight(true);
+                $('html, body').stop().animate({
+                    scrollTop: naturalHeight
+                }, 500);
+            }
+
+            /**
+             * Expand banner to fill screen when $window.scrollTop is 0.
+             *
+             * @return undefined
+             */
+            function setBannerHeight() {
+                if (state.setHeightInFlight) {
+                    return;
+                }
+
+                var windowHeight = el.$window.outerHeight(true);
+                var bannerHeight = el.$banner.outerHeight(true);
+
+                var canExpand = windowHeight > bannerHeight + CAN_EXPAND_MIN_GAP;
+                var shouldExpand = canExpand && !el.$window.scrollTop();
+
+                var currentState = {
+                    isExpanded: shouldExpand,
+                    windowWidth: el.$window.width()
+                };
+
+                // break if state hasn't changed
+                if (!isStateChanged(currentState)) {
+                    return;
+                }
+
+                state.setHeightInFlight = true;
+                state.isExpanded = shouldExpand;
+                state.windowWidth = currentState.windowWidth;
+
+                var onAfterExpand = function() {
+                    state.setHeightInFlight = false;
+                };
+
+                var onAfterShrink = function() {
+                    el.$banner.css({'height': 'auto'});
+                    state.setHeightInFlight = false;
+                };
+
+                var expand = function() {
+                    var fullHeight = el.$window.outerHeight(true);
+                    el.$scrollHint.fadeIn();
+                    el.$banner.animate(
+                        {height: fullHeight},
+                        EXPAND_ANIMATION_MS,
+                        onAfterExpand
+                    );
+                };
+
+                var shrink = function() {
+                    var naturalHeight = el.$bannerInner.outerHeight(true);
+                    el.$scrollHint.hide();
+                    el.$banner.animate(
+                        {'height': naturalHeight},
+                        EXPAND_ANIMATION_MS,
+                        onAfterShrink
+                    );
+                };
+
+                if (shouldExpand) {
+                    expand();
+                } else {
+                    shrink();
+                }
+            }
+
+            /**
+             * Ensure sidebar is affixed to the correct position.
+             *
+             * @return undefined
+             */
+            function updateSidebar() {
+                el.$sidebar.affix('checkPosition');
+            }
+
+            function init() {
+                wrapNav();
+                setBannerHeight();
+
+                el.$window.on(
+                    'DOMContentLoaded resize scroll',
+                    debounce(setBannerHeight, 50)
+                );
+
+                el.$window.on(
+                    'DOMContentLoaded resize scroll',
+                    debounce(wrapNav, 50)
+                );
+
+                el.$body.scrollspy({
+                    target: '.gse-houses',
+                    offset: 100,
+                });
+
+                el.$sidebar.affix({
+                    offset: {top: el.$houses.offset().top - 60}
+                });
+
+                el.$window.on(
+                    'DOMContentLoaded resize scroll',
+                    debounce(updateSidebar, 50)
+                )
+            }
+
+            init();
+        });
+        </script>
+
+        <!-- bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- typeform -->
+        <script>// (function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+        <!-- google analytics -->
+        <script>// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-83416444-1', 'auto');ga('send', 'pageview');</script>
+    </body>
+</html>
